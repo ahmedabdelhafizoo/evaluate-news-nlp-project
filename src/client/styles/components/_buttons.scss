@@ -1,0 +1,62 @@
+.btn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: $mainColor;
+    color: #fff;
+    width: 100%;
+    padding: 18px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: all .3s;
+    &:hover {
+        background: darken($mainColor, 10%);
+    }
+
+    /* loading btn */
+    &--loading {
+        position: relative;
+        opacity: .8;
+        cursor: initial;
+    }
+
+    &--loading::before,
+    &--loading::after {
+        content: "";
+        position: absolute;
+    }
+
+    &--loading::before {
+        background: $mainColor;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &--loading::after {
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        border-color: #fff;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: spinner 1s linear forwards infinite;
+    }
+
+}
+
+@keyframes spinner {
+    from {
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

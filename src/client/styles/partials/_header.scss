@@ -1,0 +1,12 @@
+.header {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(#000, .3);
+    padding: 15px 10px;
+    background: $mainColor;
+    &__logo {
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 10px;
+        font-size: 30px;
+    }
+}
