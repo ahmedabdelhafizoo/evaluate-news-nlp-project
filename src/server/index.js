@@ -11,10 +11,10 @@ const app = express()
 
 app.use(cors())
 
-app.use(express.static(path.resolve('../../dist')))
+app.use(express.static('dist'))
 
 app.get('/', function (req, res) {
-    res.sendFile(path.resolve('../../dist/index.html'))
+    res.sendFile('dist/index.html')
 })
 
 // designates what port the app will listen to for incoming requests
