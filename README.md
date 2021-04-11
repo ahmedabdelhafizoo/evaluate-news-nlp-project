@@ -15,10 +15,12 @@ The goal of this project is to give you practice with:
 
 `cd` into your new folder and run:
 - `npm install`
-to run jest test:
+to install all required packages and get node modules folder:
 - `npm run test`
-to create dist folder using webpack:
+to run jest test
 - `npm run build`
-`cd` into ./src/server/ then run index.js file
+to get dist folder using webpack
+- `cd` into ./src/server/
 - `node index.js`
+to run index.js file
 finally go to port 8080 to run the project http://localhost:8080:
